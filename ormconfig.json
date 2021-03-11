@@ -1,0 +1,16 @@
+{
+	"type": "postgres",
+	"host": "localhost",
+	"port": 5432,
+	"username": "postgres",
+	"password": "postgres",
+	"url": "postgres://postgres:12345@localhost:5432/gl",
+	"database": "express_typescript",
+	"synchronize": true,
+	"logging": true,
+	"entities": ["src/database/entities/**/*.ts", "dist/database/entities/**/*.js"],
+	"migrations": ["src/database/migrations/*.js"],
+	"cli": {
+		"migrationsDir": "src/database/migrations/"
+	}
+}
